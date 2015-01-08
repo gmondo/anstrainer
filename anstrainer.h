@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX_RESPONSE_LEN 80
-/* try to have context of same size to save program size*/
+/* Try to have context of same size to save program size */
 #define MAX_CONTEXT_LEN 3 	
 
 typedef struct query_answers {
@@ -8,7 +8,7 @@ typedef struct query_answers {
 	char 	*answers[MAX_RESPONSE_LEN];
 } t_qa;
 
-/* context are set of t_qr with same response type */
+/* Context are set of t_qa with same response type */
 typedef struct context {
 	int	size;
 	t_qa	query_answers[MAX_CONTEXT_LEN];
@@ -16,8 +16,10 @@ typedef struct context {
 
 t_ctxt contexts[] = {
 	{
+		/* Number of questions in the context */
 		2, 
 		{
+			/* Question and answers. All answers in a context must be different */ 
 			{"uno", {"un", "one"}},
 			{"due", {"deux", "two"}}
 		}
