@@ -1,0 +1,12 @@
+# Question and answers
+# First example: questions with single response
+What's the capital of France?Paris
+What's the capital of Italy?Rome
+What's the capital of Denmark?Copenaghen
+What's the capital of Spain?Madrid
+		
+# Second example: questions with multiple responses
+# Note that same response cannot be written differently, i.e. Germany differs from germany
+In which states flows Danube?Austria|Romania|Germany
+In which states flows Rhine?Switzerland|France|Germany
+Which states border Germany?France|Poland|Switzerland|Austria
